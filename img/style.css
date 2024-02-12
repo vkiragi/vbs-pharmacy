@@ -64,9 +64,17 @@ body {
 }
 
 .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
 }
 
 .grid .item {
+  display: flex;
+  flex-direction: column;
+  border: 1px #ccc solid;
+  padding: 10px;
+  box-shadow: 1px 1px 2px #ccc;
 }
 
 .grid .item img {
